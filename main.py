@@ -18,7 +18,7 @@ vk = vk_session.get_api()
 longpoll = VkBotLongPoll(vk_session, 171810806)
 
 if __name__ == '__main__':
-    model = tf.keras.models.load_model('fashion_mnist_dense.h5')
+    # model = tf.keras.models.load_model('fashion_mnist_dense.h5')
     for event in longpoll.listen():
         if event.type == VkBotEventType.MESSAGE_NEW:
             # stream = BytesIO()
